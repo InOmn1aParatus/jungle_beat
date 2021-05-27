@@ -11,4 +11,8 @@ class LinkedList
   def append(data)
     @head = Node.new(data)
   end
+
+  def count
+    # @head.data.count
+  end
 end

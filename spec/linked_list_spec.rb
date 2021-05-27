@@ -19,16 +19,15 @@ RSpec.describe LinkedList do
   describe 'methods' do
     before :each do
       @list = LinkedList.new
+      @list.append('doop')
     end
 
     it 'appends head with data' do
-      @list.append('doop')
       expect(@list.head.data).to eq('doop')
       expect(@list.head.next_node).to eq(nil)
     end
 
     it 'counts number of items in list' do
-      @list.append('doop')
       expect(@list.count).to eq(1)
     end
   end
